@@ -308,6 +308,8 @@ GameObject:
   - component: {fileID: 1146277736}
   - component: {fileID: 1146277735}
   - component: {fileID: 1146277734}
+  - component: {fileID: 1146277739}
+  - component: {fileID: 1146277738}
   m_Layer: 0
   m_Name: sensor
   m_TagString: Untagged
@@ -346,7 +348,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: def488e5d336fbb4cb6ed2bd0a570a54, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -388,6 +390,82 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1925484171}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1146277738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146277733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84139ebb75a8ad44185878710a834f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentStatus: 0
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
+  radiusDetection: 2
+  sensorPosition: {fileID: 0}
+  targetDetected: 0
+  speedRotation: 5
+  timeIdle: 10
+  angles: []
+  angleIndex: 0
+--- !u!114 &1146277739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146277733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84139ebb75a8ad44185878710a834f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentStatus: 0
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
+  radiusDetection: 2
+  sensorPosition: {fileID: 0}
+  targetDetected: 0
+  speedRotation: 5
+  timeIdle: 10
+  angles: []
+  angleIndex: 0
+--- !u!1 &1180725318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1180725319}
+  m_Layer: 0
+  m_Name: sensor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1180725319
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180725318}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1925484171}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1314635239
 GameObject:
@@ -453,7 +531,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f5a3456be3936044980bc2309204b168, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -532,7 +610,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: def488e5d336fbb4cb6ed2bd0a570a54, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -569,7 +647,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408739884}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.33, y: 0.6, z: -2.63}
+  m_LocalPosition: {x: 1.77, y: 0.6, z: -2.63}
   m_LocalScale: {x: 1, y: 4.3787, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -626,7 +704,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e7913c5b2c37c1240b0dc2e878180da0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -681,6 +759,8 @@ GameObject:
   - component: {fileID: 1925484170}
   - component: {fileID: 1925484169}
   - component: {fileID: 1925484168}
+  - component: {fileID: 1925484173}
+  - component: {fileID: 1925484172}
   m_Layer: 0
   m_Name: Agente
   m_TagString: Untagged
@@ -719,7 +799,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: def488e5d336fbb4cb6ed2bd0a570a54, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -756,11 +836,58 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925484167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.4299994, y: 0.8500004, z: -2.3000002}
+  m_LocalPosition: {x: -4.64, y: -0.31, z: -2.3000002}
   m_LocalScale: {x: 1, y: 4.3787, z: 1}
   m_Children:
   - {fileID: 1314635240}
   - {fileID: 1146277737}
+  - {fileID: 1180725319}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1925484172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925484167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84139ebb75a8ad44185878710a834f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentStatus: 0
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
+  radiusDetection: 3
+  sensorPosition: {fileID: 0}
+  targetDetected: 0
+  speedRotation: 5
+  timeIdle: 10
+  angles: []
+  angleIndex: 0
+--- !u!114 &1925484173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925484167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84139ebb75a8ad44185878710a834f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentStatus: 0
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
+  radiusDetection: 3
+  sensorPosition: {fileID: 0}
+  targetDetected: 0
+  speedRotation: 5
+  timeIdle: 10
+  angles: []
+  angleIndex: 0
